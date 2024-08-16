@@ -4,9 +4,79 @@
         <title>Sign Up Form</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./styles.css">
-        
+
     </head>
     <body>
+
+        <div class="brand-container">
+            
+            <div class="brand brand--logo">
+                <img class="brand_image" src="./img/odin-lined.png" alt="brand-logo">
+                <h1 class="brand_name">ODIN</h1>
+            </div>
+            
+            <div class="brand brand--assets">
+                <p class="brand_credits">Photo by <a href=".">Halie West</a> on <a href=".">Unsplash</a></p>
+            </div>
+        
+        </div>
+        
+        
+        <div class="sign_up-container">
+
+            <div class="sign_up sign_up--intro">
+                <p>There is only one real service! You know you've been in need of something your entire life to help you understand your deepest dreams. <br>Sign up <span class="italic">now</span> to get started.</p>
+                <p>You <span class="italic">know</span> you have to.</p>
+            </div>
+            
+            <form class="sign_up sign_up--form" action="./server-side" method="post">
+
+                <div class="sign_up_inputs">
+                    <h2>Let's do this!</h2>
+                    <ul>
+                        <li>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" pattern="[a-zA-Z]+" required>
+                            <span class="icon"></span>
+                        </li>
+                        <li>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" pattern="[a-zA-Z]+" required>
+                            <span class="icon"></span>
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" required>
+                            <span class="icon"></span>
+                        </li>
+                        <li>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" required>
+                            <span class="icon"></span>
+                        </li>
+                        <li>
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" required>
+                            <span class="password-notice"></span>
+                            <span class="icon"></span>
+                        </li>
+                        <li>
+                            <label for="pwd-c">CONFIRM PASSWORD</label>
+                            <input type="password" id="pwd-c" required>
+                            <span class="icon"></span>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="sign_up_submit">
+                    <button type="submit">Create Account</button>
+                    
+                    <p>Already have an account? <a href=".">Log in</a></p>
+                </div>
+
+            </form>
+
+        </div>
 
         
     </body>
