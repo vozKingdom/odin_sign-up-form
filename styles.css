@@ -1,7 +1,12 @@
+/* importation of coco cola */
+
 @font-face {
     font-family: 'NORSE';
     src: url(./fonts/Norse-Bold.otf);
 }
+
+/* css reset */
+
 
 
 * {
@@ -16,11 +21,16 @@
 
 
 
+/* global */
+
 body {
     display: flex;
 }
 
 
+
+
+/* left side */
 
 .brand-container {
     /* border: red 1px solid; */
@@ -97,7 +107,7 @@ body {
 
 
 
-
+/* right side */
 
 .sign_up-container {
     /* display: flex;
@@ -114,10 +124,6 @@ body {
 
     /* padding: 3vh; */
 }
-
-
-
-
 
 
 .sign_up--intro {
@@ -151,7 +157,6 @@ body {
 
 
 
-
 .sign_up--form {
 
 
@@ -171,7 +176,6 @@ body {
 
 
 }
-
 
 
 .sign_up_inputs{
@@ -261,6 +265,8 @@ input[type="password"]{
 
 input:not([type="password"]):hover, 
 input:not([type="password"]):focus {
+    outline: none;
+
     border: solid 2px deepskyblue;
     box-shadow: deepskyblue 0px 0px 1px;
 

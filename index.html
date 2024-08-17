@@ -8,7 +8,7 @@
     </head>
     <body>
 
-        <div class="brand-container">
+        <div class="left-side brand-container">
             
             <div class="brand brand--logo">
                 <img class="brand_image" src="./img/odin-lined.png" alt="brand-logo">
@@ -22,10 +22,10 @@
         </div>
         
         
-        <div class="sign_up-container">
+        <div class="right-side sign_up-container">
 
             <div class="sign_up sign_up--intro">
-                <p>There is only one real service! You know you've been in need of something your entire life to help you understand your deepest dreams. <br>Sign up <span class="italic">now</span> to get started.</p>
+                <p>There can only be one real service! You know you've been in need of something your entire life to help you understand your deepest dreams. <br>Sign up <span class="italic">now</span> to get started.</p>
                 <p>You <span class="italic">know</span> you have to.</p>
             </div>
             
@@ -62,7 +62,8 @@
                         </li>
                         <li>
                             <label for="pwd-c">CONFIRM PASSWORD</label>
-                            <input type="password" id="pwd-c" required>
+                            <input type="password" id="pwd-c" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                            " required title="Password must be 8-16 characters long and include at least one number, one lowercase letter, one uppercase letter, and one special character (!@#$%^&*).">
                             <span class="icon"></span>
                         </li>
                     </ul>
